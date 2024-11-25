@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		a{
+			
+			color: orange;
+			text-decoration: none;
+			font-family: URW Chancery L, cursive
+		    
+
+
+		}
+	
+	</style>
+	
+		<script type="text/javascript">
+
+function setbackground()
+{
+window.setTimeout( "setbackground()", 1200); // 5000 milliseconds delay
+var index = Math.round(Math.random() * 9);
+var ColorValue = "FFFFFF"; // default color - white (index = 0)
+if(index == 1)
+ColorValue = "667C26"; //peach
+if(index == 2)
+ColorValue = "A1C935"; //violet
+if(index == 3)
+ColorValue = "A6BEFF"; //lt blue
+if(index == 4)
+ColorValue = "2B1B17"; //cyan
+if(index == 5)
+ ColorValue = "254117"; //tan
+if(index == 6)
+ColorValue = "342D7E"; //lt reen
+if(index == 7)
+ColorValue = "7FFFD4"; //lt yellow
+if(index == 8)
+ColorValue = "493D26"; //lt orange //lt grey
+document.getElementsByTagName("body")[0].style.backgroundColor = "#" + ColorValue;
+}
+</script>		
+</head>
+<body onload="setbackground();">
+ <h1 style="font-size:60px;color:black;text-align:center"><a href="/login.html" target="output2">HEART ATTACK PREDICTION</a></h1>
+</body>
+</html>
